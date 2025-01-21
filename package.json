@@ -1,0 +1,38 @@
+{
+    "name": "starter-template",
+    "version": "1.0.0",
+    "description": "Template for node.js project with TypeScript and eslint",
+    "type": "module",
+    "main": "src/index.ts",
+    "scripts": {
+        "compile": "tsc",
+        "format": "prettier . --write",
+        "lint": "eslint . --fix",
+        "test": "npm run compile && npm run format && npm run lint && jest ./src",
+        "dev": "nodemon --exec tsx src/index.ts",
+        "start": "npm run compile && node dist/index.js"
+    },
+    "author": "Eugene Shtoka",
+    "devDependencies": {
+        "@eslint/js": "^9.18.0",
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.10.7",
+        "@typescript-eslint/eslint-plugin": "^8.21.0",
+        "@typescript-eslint/parser": "^8.21.0",
+        "eslint": "^9.18.0",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-check-file": "^2.8.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-jest": "^28.11.0",
+        "eslint-plugin-prettier": "^5.2.3",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-unicorn": "^56.0.1",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.9",
+        "prettier": "^3.4.2",
+        "ts-jest": "^29.2.5",
+        "tsx": "^4.19.2",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.21.0"
+    }
+}

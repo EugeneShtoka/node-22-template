@@ -1,0 +1,7 @@
+# Ignore node_modules folder
+node_modules
+
+#ignore vs-code config
+.vscode
+
+dist
